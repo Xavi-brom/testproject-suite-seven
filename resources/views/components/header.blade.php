@@ -91,7 +91,7 @@
 
     {{-- Bottom part-header --}}
     <div @class([
-        'flex justify-between items-center max-w-7xl mx-auto h-16 text-[16px] font-medium',
+        'flex justify-between items-center max-w-7xl mx-auto h-16 text-[16px] font-medium relative',
         'text-white' => $isHome,
         'text-gray-800 dark:text-gray-100' => ! $isHome,
     ])>
@@ -100,7 +100,30 @@
 
         <a href="#" class="hover:text-[#d1b000]">Brievenbussen</a>
 
-        <a href="#" class="hover:text-[#d1b000]">Deursystemen</a>
+        {{-- Deursystemen + mega menu --}}
+        <div
+            x-data="{ open: false }"
+            @mouseenter="open = true"
+            @mouseleave="open = false"
+        >
+            <a href="#" class="hover:text-[#d1b000]">Deursystemen</a>
+
+            {{-- Mega menu dropdown --}}
+            <div
+                x-show="open"
+                x-transition:enter="transition ease-out duration-150"
+                x-transition:enter-start="opacity-0 -translate-y-2"
+                x-transition:enter-end="opacity-100 translate-y-0"
+                x-transition:leave="transition ease-in duration-100"
+                x-transition:leave-start="opacity-100 translate-y-0"
+                x-transition:leave-end="opacity-0 -translate-y-2"
+                x-cloak
+                class="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-screen border-t border-gray-100 dark:border-gray-500 shadow-lg text-gray-800 dark:text-gray-100 font-normal"
+                style="z-index: 60;"
+            >
+                @include('components.megamenu-deursystemen')
+            </div>
+        </div>
 
         <a href="#" class="hover:text-[#d1b000]">Catalogus</a>
 

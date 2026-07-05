@@ -7,7 +7,7 @@
 
 <button
     {{ $attributes->merge([
-        'class' => "group relative overflow-hidden w-52 h-14 px-5 text-base font-medium cursor-pointer transition-all duration-800 $background $border"
+        'class' => "group relative overflow-hidden w-52 h-14 px-5 text-base font-medium cursor-pointer transition-all duration-1200 $background $border"
     ]) }}
 >
 
@@ -17,12 +17,12 @@
                scale-0
                origin-bottom-right
                group-hover:scale-[3]
-               transition-transform duration-800 ease-out"
+               transition-transform duration-1200 ease-out"
     ></div>
 
     {{-- Text --}}
     <span
-        class="relative z-20 transition-colors duration-800 {{ $textColor }}
+        class="relative z-20 transition-colors duration-500 {{ $textColor }}
                group-hover:text-black"
     >
         {{ $slot }}
