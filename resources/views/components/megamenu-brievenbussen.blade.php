@@ -1,4 +1,4 @@
-<div class="bg-[#F7F4EF] dark:bg-[#45454F]">
+<div class="bg-white dark:bg-[#45454F]">
 
     <div class="grid grid-cols-[2fr_2fr_2fr_2fr_3fr] gap-12 px-14 py-10 max-w-7xl mx-auto">
 
@@ -22,10 +22,6 @@
                 {{-- design --}}
                 <div>
                     <a href="#" class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Design</a>
-                </div>
-                {{-- stoer --}}
-                <div>
-                    <a href="#" class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Stoer!</a>
                 </div>
                 {{-- statieven --}}
                 <div>
@@ -71,9 +67,9 @@
 
             {{-- row --}}
             <div class="flex flex-col gap-3">
-                {{-- stoer doorvoerboxen --}}
+                {{-- Doorvoerboxen --}}
                 <div>
-                    <a href="#" class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Stoer! doorvoerboxen</a>
+                    <a href="#" class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Doorvoerboxen</a>
                 </div>
                 {{-- pakket opvangbrievenbus --}}
                 <div>

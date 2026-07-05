@@ -6,13 +6,13 @@
     x-data="{ menuOpen: false }"
     @class([
         'w-full transition-colors duration-300 ease-in-out',
-        'absolute top-0 left-0 z-50 border-b border-white/20 dark:border-gray-600' => $isHome,
-        'bg-white dark:bg-[#45454F] border-b border-[#E6DFD2] dark:border-gray-600' => ! $isHome,
+        'absolute top-0 left-0 z-50 bg-[#45454F]/70 border-b border-gray-400' => $isHome,
+        'bg-white dark:bg-[#45454F] border-b border-gray-500 dark:border-gray-400' => ! $isHome,
     ])
     @if($isHome)
         :class="menuOpen
-            ? 'bg-[#F7F4EF] dark:bg-[#45454F] border-[#E6DFD2] dark:border-gray-600'
-            : 'bg-[#F7F4EF]/10 dark:bg-[#45454F]/70 border-white/20'"
+            ? 'bg-white dark:bg-[#45454F] border-gray-500 dark:border-gray-400'
+            : 'bg-[#45454F]/70 border-gray-400'"
     @endif
 >
 
@@ -65,13 +65,13 @@
                         placeholder='Zoek bijvoorbeeld naar "magneet sluiting"'
                         @class([
                             'w-full bg-transparent text-lg focus:outline-none transition-colors duration-300',
-                            'text-white placeholder-white/70' => $isHome,
-                            'text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500' => ! $isHome,
+                            'text-gray-400 placeholder-gray-400/70' => $isHome,
+                            'text-gray-500 dark:text-gray-400 placeholder-gray-500/70 dark:placeholder-gray-400/70' => ! $isHome,
                         ])
                         @if($isHome)
                             :class="menuOpen
-                                ? 'text-gray-800 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400'
-                                : 'text-white placeholder-white/70'"
+                                ? 'text-gray-500 dark:text-gray-400 placeholder-gray-500/70 dark:placeholder-gray-400/70'
+                                : 'text-gray-400 placeholder-gray-400/70'"
                         @endif
                     >
                 </div>
@@ -90,13 +90,13 @@
             <div
                 @class([
                     'border-t-2 transition-colors duration-300',
-                    'border-white/30' => $isHome,
-                    'border-[#DED7CB] dark:border-gray-600' => ! $isHome,
+                    'border-gray-400' => $isHome,
+                    'border-gray-500 dark:border-gray-400' => ! $isHome,
                 ])
                 @if($isHome)
                     :class="menuOpen
-                        ? 'border-[#DED7CB] dark:border-gray-600'
-                        : 'border-white/30'"
+                        ? 'border-gray-500 dark:border-gray-400'
+                        : 'border-gray-400'"
                 @endif
             ></div>
 
@@ -155,13 +155,13 @@
     <div
         @class([
             'max-w-7xl mx-auto border-t transition-colors duration-300',
-            'border-white/20' => $isHome,
-            'border-[#DED7CB] dark:border-gray-600' => ! $isHome,
+            'border-gray-400' => $isHome,
+            'border-gray-500 dark:border-gray-400' => ! $isHome,
         ])
         @if($isHome)
             :class="menuOpen
-                ? 'border-[#DED7CB] dark:border-gray-600'
-                : 'border-white/20'"
+                ? 'border-gray-500 dark:border-gray-400'
+                : 'border-gray-400'"
         @endif
     ></div>
 
@@ -169,13 +169,13 @@
     <div
         @class([
             'flex justify-between items-center max-w-7xl mx-auto h-16 text-[16px] font-medium relative transition-colors duration-300',
-            'text-gray-800' => $isHome,
+            'text-gray-100' => $isHome,
             'text-gray-800 dark:text-gray-100' => ! $isHome,
         ])
         @if($isHome)
             :class="menuOpen
                 ? 'text-gray-800 dark:text-gray-100'
-                : 'text-white'"
+                : 'text-gray-100'"
         @endif
     >
 
@@ -197,7 +197,7 @@
                 x-transition:leave-start="opacity-100 translate-y-0"
                 x-transition:leave-end="opacity-0 -translate-y-2"
                 x-cloak
-                class="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-screen border-t border-[#DED7CB] dark:border-gray-600 shadow-lg text-gray-800 dark:text-gray-100 font-normal"
+                class="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-screen border-t border-gray-500 dark:border-gray-400 shadow-lg text-gray-800 dark:text-gray-100 font-normal"
                 style="z-index:60;"
             >
                 @include('components.megamenu-brievenbussen')
@@ -220,7 +220,7 @@
                 x-transition:leave-start="opacity-100 translate-y-0"
                 x-transition:leave-end="opacity-0 -translate-y-2"
                 x-cloak
-                class="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-screen border-t border-[#DED7CB] dark:border-gray-600 shadow-lg text-gray-800 dark:text-gray-100 font-normal"
+                class="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-screen border-t border-gray-500 dark:border-gray-400 shadow-lg text-gray-800 dark:text-gray-100 font-normal"
                 style="z-index:60;"
             >
                 @include('components.megamenu-deursystemen')

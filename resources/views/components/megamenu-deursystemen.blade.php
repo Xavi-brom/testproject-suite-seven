@@ -1,4 +1,4 @@
-<div class="bg-[#F7F4EF] dark:bg-[#45454F]">
+<div class="bg-white dark:bg-[#45454F]">
 
     <div class="grid grid-cols-[1.1fr_2fr] gap-16 px-14 py-10 max-w-7xl mx-auto">
 
@@ -16,7 +16,7 @@
                     <div class="relative w-full aspect-square bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('images/deursystemen/inbouwsystemen.png') }}" alt="Inbouwsystemen" class="w-full h-full object-cover">
                         {{-- driehoek --}}
-                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-[#F7F4EF] dark:border-b-[#45454F]"></div>
+                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-white dark:border-b-[#45454F]"></div>
                     </div>
                     <span class="mt-3 text-xs text-gray-500 dark:text-gray-400">Inbouwsystemen</span>
                 </div>
@@ -25,7 +25,7 @@
                     <div class="relative w-full aspect-square bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('images/deursystemen/losse-railsystemen.png') }}" alt="Losse railsystemen" class="w-full h-full object-cover">
                         {{-- driehoek --}}
-                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-[#F7F4EF] dark:border-b-[#45454F]"></div>
+                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-white dark:border-b-[#45454F]"></div>
                     </div>
                     <span class="mt-3 text-xs text-gray-500 dark:text-gray-400">Losse railsystemen</span>
                 </div>
@@ -34,7 +34,7 @@
                     <div class="relative w-full aspect-square bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('images/deursystemen/schaniersystemen.png') }}" alt="Schaniersystemen" class="w-full h-full object-cover">
                         {{-- driehoek --}}
-                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-[#F7F4EF] dark:border-b-[#45454F]"></div>
+                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-white dark:border-b-[#45454F]"></div>
                     </div>
                     <span class="mt-3 text-xs text-gray-500 dark:text-gray-400">Schaniersystemen</span>
                 </div>
@@ -43,7 +43,7 @@
                     <div class="relative w-full aspect-square bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('images/deursystemen/schuifdeurpanelen.png') }}" alt="Schuifdeurpanelen" class="w-full h-full object-cover">
                         {{-- driehoek --}}
-                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-[#F7F4EF] dark:border-b-[#45454F]"></div>
+                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-white dark:border-b-[#45454F]"></div>
                     </div>
                     <span class="mt-3 text-xs text-gray-500 dark:text-gray-400">Schuifdeurpanelen</span>
                 </div>
@@ -52,7 +52,7 @@
                     <div class="relative w-full aspect-square bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden flex items-center justify-center">
                         <img src="{{ asset('images/deursystemen/accessoires.png') }}" alt="Accessoires" class="w-full h-full object-cover">
                         {{-- driehoek --}}
-                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-[#F7F4EF] dark:border-b-[#45454F]"></div>
+                        <div class="absolute bottom-0 right-0 w-0 h-0 border-l-[18px] border-l-transparent border-b-[18px] border-b-white dark:border-b-[#45454F]"></div>
                     </div>
                     <span class="mt-3 text-xs text-gray-500 dark:text-gray-400">Accessoires</span>
                 </div>
