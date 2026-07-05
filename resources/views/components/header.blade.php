@@ -182,14 +182,27 @@
             @endif
         >
 
-            <a href="#" class="hover:text-[#d1b000]">Deurbeslag</a>
+            <a href="#" class="flex items-center gap-1 hover:text-[#d1b000]">
+                Deurbeslag
+                <svg viewBox="0 0 20 20" fill="none" class="w-3 h-3 text-[#d1b000]">
+                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
 
             <div
                 @mouseenter="clearTimeout(closeTimeout); activeMenu = 'brievenbussen'; menuOpen = true"
                 @mouseleave="closeTimeout = setTimeout(() => { activeMenu = null; menuOpen = false }, 150)"
                 class="h-full flex items-center"
             >
-                <a href="#" class="hover:text-[#d1b000]">Brievenbussen</a>
+                <a href="#" class="flex items-center gap-1 hover:text-[#d1b000]">
+                    Brievenbussen
+                    <svg
+                        viewBox="0 0 20 20" fill="none" class="w-3 h-3 text-[#d1b000] transition-transform duration-200"
+                        :class="activeMenu === 'brievenbussen' ? 'rotate-180' : ''"
+                    >
+                        <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
 
                 <div
                     x-show="activeMenu === 'brievenbussen'"
@@ -212,7 +225,15 @@
                 @mouseleave="closeTimeout = setTimeout(() => { activeMenu = null; menuOpen = false }, 150)"
                 class="h-full flex items-center"
             >
-                <a href="#" class="hover:text-[#d1b000]">Deursystemen</a>
+                <a href="#" class="flex items-center gap-1 hover:text-[#d1b000]">
+                    Deursystemen
+                    <svg
+                        viewBox="0 0 20 20" fill="none" class="w-3 h-3 text-[#d1b000] transition-transform duration-200"
+                        :class="activeMenu === 'deursystemen' ? 'rotate-180' : ''"
+                    >
+                        <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
 
                 <div
                     x-show="activeMenu === 'deursystemen'"
