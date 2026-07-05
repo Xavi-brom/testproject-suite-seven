@@ -3,11 +3,12 @@
     'textColor' => 'text-gray-900',
     'triangleColor' => 'border-[#d4b000]',
     'border' => '',
+    'fullWidth' => false,
 ])
 
 <button
     {{ $attributes->merge([
-        'class' => "group relative overflow-hidden w-52 h-14 px-5 text-base font-medium cursor-pointer transition-all duration-1200 $background $border"
+        'class' => "group relative overflow-hidden " . ($fullWidth ? 'w-full' : 'w-52') . " h-14 px-5 text-base font-medium cursor-pointer transition-all duration-1200 $background $border"
     ]) }}
 >
 
