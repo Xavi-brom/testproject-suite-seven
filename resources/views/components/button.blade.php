@@ -8,7 +8,7 @@
 
 <button
     {{ $attributes->merge([
-        'class' => "group relative overflow-hidden " . ($fullWidth ? 'w-full' : 'w-52') . " h-14 px-5 text-base font-medium cursor-pointer transition-all duration-1200 $background $border"
+        'class' => "group relative overflow-hidden " . ($fullWidth ? 'w-full' : 'w-auto sm:w-52') . " h-12 sm:h-14 px-4 sm:px-5 text-sm sm:text-base font-medium cursor-pointer transition-all duration-1200 $background $border"
     ]) }}
 >
 

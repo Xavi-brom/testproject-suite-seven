@@ -18,15 +18,15 @@
 
         {{-- Hero Content --}}
         <div class="absolute inset-0 flex items-end">
-            <div class="max-w-7xl w-full mx-auto pb-28">
+            <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 lg:pb-28">
 
                 {{-- Title --}}
-                <h1 class="text-white text-7xl leading-none font-['Mrs_Eaves_XL_Serif_Nar_OT']">
+                <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-none font-['Mrs_Eaves_XL_Serif_Nar_OT']">
                     Design in <span class="italic">details</span>
                 </h1>
 
                 {{-- Buttons --}}
-                <div class="flex gap-4 mt-8">
+                <div class="flex flex-row gap-3 sm:gap-4 mt-6 sm:mt-8">
 
                     <x-button
                         background="bg-white"

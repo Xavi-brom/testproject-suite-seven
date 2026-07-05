@@ -1,6 +1,6 @@
 <div class="bg-white dark:bg-[#45454F]">
 
-    <div class="grid grid-cols-[1.1fr_2fr] gap-16 px-14 py-10 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_2fr] gap-10 lg:gap-16 px-4 sm:px-8 lg:px-14 py-6 lg:py-10 max-w-7xl mx-auto">
 
         {{-- linkerkant --}}
         <div>
@@ -10,7 +10,7 @@
             </div>
 
             {{-- deursysteemblokken --}}
-            <div class="grid grid-cols-3 gap-x-6 gap-y-8">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-8">
                 {{-- inbouwsystemen --}}
                 <div class="flex flex-col">
                     <div class="relative w-full aspect-square bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden flex items-center justify-center">
@@ -60,7 +60,7 @@
         </div>
 
         {{-- rechterkant --}}
-        <div class="grid grid-cols-3 gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
             {{-- kies je stijl --}}
             <div>
                 {{-- titel --}}

@@ -1,6 +1,6 @@
 <div class="bg-white dark:bg-[#45454F]">
 
-    <div class="grid grid-cols-[2fr_2fr_2fr_2fr_3fr] gap-12 px-14 py-10 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_2fr_2fr_2fr_3fr] gap-8 lg:gap-12 px-4 sm:px-8 lg:px-14 py-6 lg:py-10 max-w-7xl mx-auto">
 
         {{-- brievenbussen --}}
         <div>
@@ -115,7 +115,7 @@
         </div>
 
         {{-- promo kaart --}}
-        <div class="relative bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden p-6 flex flex-col justify-between min-w-0">
+        <div class="relative bg-[#EDE8DD] dark:bg-[#54545E] rounded-sm overflow-hidden p-6 flex flex-col justify-between min-w-0 col-span-1 sm:col-span-2 lg:col-span-1">
             {{-- tekst --}}
             <div>
                 <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100 leading-snug">Vind je Hardbrass dealer</h3>
